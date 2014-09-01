@@ -2,9 +2,9 @@ package jp.co.terrasky.sfc;
 
 
 public class SfcMain {
-	private static String SFDC_USER_ID = "kkikuchi@de1.terrasky.co.jp";
-	private static String SFDC_USER_PASSWORD = "zaq12wsxM5AXmPNVtoN5WcOFgf10akehj";
-	private static String SFDC_END_POINT = "https://login.salesforce.com";
+	private static String SFDC_USER_ID = "[ログインＩＤ]";
+	private static String SFDC_USER_PASSWORD = "[パスワード＋セキュリティトークン]";
+	private static String SFDC_END_POINT = "[エンドポイントＵＲＬ]";
 
 	public static void main(String[] args) {
 		try {
