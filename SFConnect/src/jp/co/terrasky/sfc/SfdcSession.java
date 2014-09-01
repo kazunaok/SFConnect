@@ -51,9 +51,7 @@ throws IOException {
 public void connect() throws IOException {
     // SOARBinding生成
     try {
-        SforceServiceLocator sfl = new SforceServiceLocator();
-        sfl.setSoapEndpointAddress(endpoint.trim());
-        binding = (SoapBindingStub)sfl.getSoap();
+        binding = (SoapBindingStub)new SforceServiceLocator().getSoap();
     } catch (ServiceException e) {
         throw new IOException("SFDCへの接続失敗");
     }
